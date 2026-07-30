@@ -1,0 +1,70 @@
+name: "Moresnet Pro Task (Advanced)"
+description: "Technical issue for experienced contributors"
+labels: ["pro", "technical", "phase-0"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Phase 0 Issue — <MODULE>-<ISSUE_NUMBER> — <ISSUE_TITLE>
+
+        ## Metadata
+        - Module: <MODULE>
+        - Issue Number: <MODULE>-<ISSUE_NUMBER>
+        - Branch Name: module/<module>/<MODULE>-<ISSUE_NUMBER>-<branch-name>
+        - Difficulty: <Easy|Medium|Hard>
+        - Time Estimate: <XX> min
+        - Cost Weight: <1|2|3>
+        - Type: <ui|layout|state|api-frontend|navigation|performance|task>
+        - Status: not-started
+
+        ## Labels
+        - module:<module>
+        - phase-0
+        - type:<type>
+        - priority:high
+        - status:not-started
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "One atomic, deterministic paragraph describing the exact purpose of the issue."
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: "Scope"
+      description: "Allowed actions only. No cross-module edits, no new dependencies, no renames."
+
+  - type: textarea
+    id: allowed_files
+    attributes:
+      label: "Allowed Files"
+      description: "List the exact files that may be edited."
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps"
+      description: "List the exact steps (1–12) required to complete this issue."
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance Criteria"
+      description: "Deterministic criteria for completion."
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Developer Expectations
+        - Read the issue fully before starting.
+        - Deliver only what is requested — nothing extra.
+        - Keep work transparent, traceable, and reviewable.
+
+        ## Review Pipeline
+        - Reviewer pulls branch.
+        - Reviewer runs branch locally.
+        - Reviewer verifies acceptance criteria.
+        - If branch fails to run → PR rejected.
