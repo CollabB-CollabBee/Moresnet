@@ -1,0 +1,55 @@
+name: "Moresnet Vibe Task (Kids-Friendly)"
+description: "Create something fun for the Moresnet world!"
+labels: ["vibe", "kids", "fun"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎮 Moresnet Vibe Task
+        Welcome to the Moresnet game!  
+        This task is for **fun, creativity, and imagination**.  
+        No coding skills required — just vibes.
+
+  - type: input
+    id: title
+    attributes:
+      label: "🌟 What do you want to create?"
+      description: "Example: a funny character, a new world, a friendly volcano, a silly creature."
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: "💡 Describe your idea!"
+      description: "Tell us what it looks like, how it behaves, and why it’s fun."
+
+  - type: textarea
+    id: assets
+    attributes:
+      label: "🎨 What assets do you want to add?"
+      description: "Images, drawings, sounds, animations — anything creative!"
+
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: "🛡️ Moresnet Safety Rules"
+      options:
+        - label: "No violence"
+        - label: "No hurting characters"
+        - label: "Everything must be friendly or funny"
+        - label: "Villains must be silly, not scary"
+
+  - type: textarea
+    id: branch
+    attributes:
+      label: "🌱 Suggested Branch Name"
+      description: "Example: vibe/world-candy-forest or vibe/character-funny-gnome"
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 When you're done
+        - Create your branch  
+        - Add your fun creation  
+        - Open a Pull Request  
+        - We’ll review it together!
